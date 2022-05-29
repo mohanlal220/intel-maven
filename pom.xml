@@ -30,12 +30,19 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
+         <repository>
+	      <id>nexus</id>
+	      <name>mohan lal technolagies nexus snapshot</name>
+	      <url>http://ec2-3-87-95-15.compute-1.amazonaws.com:8081/repository/flipcart-snapshot/</url>
+	 </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mohan lal Technologies Snapshot Nexus Repository </name>
+	      <url>http://ec2-3-87-95-15.compute-1.amazonaws.com:8081/repository/flipcat-realise/</url>
+	    </snapshotRepository>
+           
+    </distributionManagement>
 
   <build>
     <plugins>
