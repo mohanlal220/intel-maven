@@ -12,8 +12,10 @@ stage('build')
     sh "${mavenHOME}/bin/mvn clean package"
 
 }
+/*
     stage('sonarqub-excustion')
     {
         sh "${mavenHOME}/bin/mvn sonar:sonar"
     }
+    */
 }    
